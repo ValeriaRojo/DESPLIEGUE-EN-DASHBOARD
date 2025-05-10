@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === Fondo general === */
+.stApp {
+    background-color: #FEF9F2 !important; /*El important forza a que se use el cambio de estilo*/
+    color: black !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+header[data-testid="stHeader"] {
+    background-color: #FEF9F2 !important; /* Fondo pastel */
+    font-family: 'Montserrat', sans-serif
+}
+
+/* === Títulos principales === */
+h1, h2, h3,
+[data-testid="stHeader"] h1,
+[data-testid="stHeader"] h2,
+[data-testid="stHeader"] h3 {
+    color: #83ac85 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    text-shadow: 1px 1px 5px rgba(204, 102, 153, 0.3) !important;
+    animation: fadeIn 1.5s ease-in-out !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* === Animación para los títulos === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Botones === */
+div.stButton > button {
+    background-color: #FF6363 !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1) !important;
+    display: block !important;
+    margin: 10px auto !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+div.stButton > button:hover {
+    background-color: #FF9A9A !important;
+    color: white !important;
+    transform: scale(1.05) !important;
+}
+
+/* === Sidebar === */
+[data-testid="stSidebar"] {
+    background-color: #86A788 !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* === Títulos dentro de la sidebar === */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] h4,
+[data-testid="stSidebar"] h5,
+[data-testid="stSidebar"] h6 {
+    color: white !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* === Inputs y selects === */
+input[type="text"],
+select {
+    border-radius: 8px !important;
+    padding: 8px !important;
+    border: 1px solid #ffcce0 !important;
+    background-color: #fff0f5 !important;
+    color: #333 !important;
+    transition: border 0.3s ease !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border: 1px solid #ff66b2 !important;
+    outline: none !important;
+}
+
+/* === Dataframes y tablas === */
+thead {
+    background-color: #ffccdd !important;
+    color: #333 !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff0f5 !important;
+}
+
+html, body, .stApp, .stApp * {
+    font-family: 'Montserrat', sans-serif !important;
+}
